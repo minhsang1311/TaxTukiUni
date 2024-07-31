@@ -9,7 +9,7 @@ function Home() {
 
   const handleCreate = (e) => {
     e.preventDefault();
-    axios.post('https://tukitax-c63b569e4018.herokuapp.com/customer', {customerName, customerPhone})
+    axios.post('http://localhost:8080/customer', {customerName, customerPhone})
     .then((res) => {
       messageApi.open({
         type: 'success',

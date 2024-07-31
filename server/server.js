@@ -6,7 +6,7 @@ const customer = require('./customer');
 const app = express();
 const cors = require('cors');
 app.use(cors({
-    origin: ['https://thue.tukiuni.vn', 'http://localhost:8080', 'https://tukitax-c63b569e4018.herokuapp.com/'],
+    origin: ['https://thue.tukiuni.vn', 'http://localhost:3000', 'https://tukitax-c63b569e4018.herokuapp.com/'],
     methods: ['POST'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
